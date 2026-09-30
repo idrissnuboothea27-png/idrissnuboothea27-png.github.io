@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Portfolio Idriss Nuboothea</title>
+<meta name="description" content="Idriss Nuboothea, chargé de marketing et communication à La Réunion : campagnes SMS et e-mail, jeux concours, études clients, contenus. Portfolio de projets.">
+<meta property="og:title" content="Portfolio Idriss Nuboothea">
+<meta property="og:description" content="Chargé de marketing et communication à La Réunion. Sept projets, du message au résultat.">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f26522'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%230b0b0b'%3EIN%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Manrope:wght@400;500;700&family=Caveat:wght@600&display=swap">
+<style>
+/* Portfolio one page, look sombre choisi (modèle Behance noir et orange) : colonne centrale 1120px, sections en alternance noir / gris chaud, mockups inclinés, numéros en filigrane, annotations manuscrites. */
+:root{
+  --bg:#0b0b0b;        /* noir profond */
+  --bg-2:#141311;      /* noir chaud, sections alternées */
+  --paper:#e8e4dd;     /* gris clair chaud, sections claires */
+  --paper-2:#f6f3ee;   /* cartes sur fond clair */
+  --ink:#171717;       /* texte sur clair */
+  --fg:#f5f2ec;        /* texte sur sombre */
+  --muted:#a9a49b;     /* texte secondaire sur sombre */
+  --muted-ink:#5f5a52; /* texte secondaire sur clair */
+  --accent:#f26522;    /* orange */
+  --accent-deep:#c94f12;
+  --line:#2a2825;
+  --line-light:#d2cdc4;
+  --display:'Syne',ui-sans-serif,system-ui,sans-serif;
+  --body:'Manrope',ui-sans-serif,system-ui,sans-serif;
+  --hand:'Caveat',cursive;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.02;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+section{padding-block:72px}
+.light{background:var(--paper);color:var(--ink)}
+.dark2{background:var(--bg-2)}
+.eyebrow{font-family:var(--body);font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.hand{font-family:var(--hand);font-weight:600;color:var(--accent);font-size:1.9rem;line-height:1;transform:rotate(-2deg);display:inline-block}
+.h2{font-size:clamp(2.1rem,5vw,3.4rem);font-weight:800;margin-top:.35rem}
+.hl{background:linear-gradient(transparent 58%,var(--accent) 58%);padding-inline:.12em;white-space:nowrap}
+.light .hl{background:linear-gradient(transparent 58%,rgba(242,101,34,.75) 58%)}
+.light .muted{color:var(--muted-ink)}
+.muted{color:var(--muted)}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.note{font-family:var(--hand);font-weight:600;font-size:1.5rem;line-height:1;color:var(--fg);display:inline-flex;align-items:center;gap:6px;transform:rotate(-3deg);padding-bottom:.4rem}
+.light .note{color:var(--ink)}
+.note svg{width:54px;height:28px;flex:none}
+.note.rev svg{transform:scaleX(-1)}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(11,11,11,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.nav .brand{font-family:var(--display);font-weight:800;font-size:1rem;letter-spacing:.02em}
+.nav .brand i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--accent);margin-right:8px}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px;flex-wrap:wrap;font-size:.86rem;font-weight:500}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover,.nav a:focus-visible{color:var(--fg)}
+@media (max-width:720px){.nav ul{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:56px 64px}
+.hero::before{content:"";position:absolute;inset:0;background:
+ radial-gradient(60% 55% at 85% 80%,rgba(242,101,34,.30),transparent 70%),
+ radial-gradient(45% 45% at 10% 20%,rgba(242,101,34,.14),transparent 70%);pointer-events:none}
+.hero .wm{position:absolute;left:-1%;bottom:-6%;font-family:var(--display);font-weight:800;font-size:clamp(6rem,22vw,17rem);line-height:1;color:#fff;opacity:.05;letter-spacing:-.05em;pointer-events:none;white-space:nowrap}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero .hello{font-size:1.15rem;color:var(--muted)}
+.hero .hello b{color:var(--accent);font-weight:700}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800;margin-top:.5rem}
+.hero .lead{margin-top:1.2rem;max-width:36rem;font-size:1.05rem;color:var(--muted)}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.4rem}
+.pill{background:var(--fg);color:var(--ink);border-radius:999px;padding:8px 16px;font-weight:700;font-size:.85rem;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.portrait{position:relative;aspect-ratio:1;max-width:420px;width:100%;justify-self:end}
+.portrait .disc{position:absolute;inset:0;border-radius:50%;background:var(--accent);box-shadow:0 0 80px rgba(242,101,34,.35)}
+.portrait img{position:absolute;inset:6%;width:88%;height:88%;border-radius:50%;object-fit:cover;object-position:top}
+.portrait .tag{position:absolute;right:-6px;bottom:8%;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-size:.8rem;line-height:1.3;box-shadow:0 14px 30px rgba(0,0,0,.5);transform:rotate(-3deg)}
+.portrait .tag b{display:block;font-family:var(--display);font-size:1.6rem;color:var(--accent);line-height:1}
+.quote{margin-top:2rem;padding-left:14px;border-left:3px solid var(--accent);color:var(--muted);font-style:italic;max-width:30rem}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.portrait{justify-self:start;max-width:300px}}
+
+
+/* hero façon Behance : salutation animée, soleil orange, portrait détouré, pilules flottantes */
+.hero2{position:relative;overflow:hidden;background:var(--bg);padding-block:44px 0;text-align:center}
+.hero2::before{content:"";position:absolute;inset:0;background:radial-gradient(40% 50% at 8% 30%,rgba(255,255,255,.07),transparent 70%),radial-gradient(50% 40% at 100% 100%,rgba(242,101,34,.18),transparent 70%);pointer-events:none}
+.hero2 .wrap{position:relative}
+.wm2{position:absolute;left:50%;top:190px;transform:translateX(-50%);font-family:var(--display);font-weight:800;font-size:clamp(5rem,19vw,15.5rem);line-height:1;color:#2a2a2a;letter-spacing:-.04em;white-space:nowrap;pointer-events:none;user-select:none}
+.hi{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1;color:var(--fg);min-height:1.1em}
+#hello{display:inline-block;transition:opacity .35s,transform .35s}
+#hello.out{opacity:0;transform:translateY(-.4em)}
+.iam{font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,4vw,3rem);line-height:1.15;margin-top:.2em}
+.iam b{color:var(--accent)}
+.wave{display:inline-block;transform-origin:70% 70%;animation:wave 2.4s ease-in-out infinite}
+@keyframes wave{0%,60%,100%{transform:rotate(0)}10%{transform:rotate(14deg)}20%{transform:rotate(-8deg)}30%{transform:rotate(14deg)}40%{transform:rotate(-4deg)}50%{transform:rotate(10deg)}}
+.hero2 h1{font-size:clamp(1.5rem,3.6vw,2.7rem);font-weight:500;letter-spacing:0;margin-top:.35em;color:var(--fg)}
+.stage{position:relative;height:560px;margin-top:10px;overflow:hidden}
+.sun{position:absolute;left:50%;bottom:-140px;width:520px;height:520px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 50% 35%,#ff8a4c,var(--accent) 60%,#d9541a);box-shadow:0 0 120px rgba(242,101,34,.35)}
+.me{position:absolute;left:50%;bottom:-150px;transform:translateX(-50%);height:700px;image-rendering:auto;width:auto;max-width:none;filter:drop-shadow(0 20px 40px rgba(0,0,0,.6))}
+.cloud{position:absolute;width:190px;height:70px;border-radius:50px;background:#fff;filter:blur(1px);opacity:.95;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.cloud::before,.cloud::after{content:"";position:absolute;background:#fff;border-radius:50%}
+.cloud::before{width:90px;height:90px;left:26px;top:-40px}
+.cloud::after{width:70px;height:70px;right:30px;top:-24px}
+.c1{left:calc(50% - 330px);bottom:130px;transform:scale(.9)}
+.c2{left:calc(50% + 120px);bottom:210px;transform:scale(.75)}
+.c3{left:calc(50% - 140px);bottom:40px;transform:scale(.6);opacity:.8}
+.fp{background:#fff;color:var(--ink);border-radius:999px;padding:9px 16px;font-weight:700;font-size:.85rem;box-shadow:0 12px 30px rgba(0,0,0,.45);white-space:nowrap;display:inline-block}
+.stage .fp{position:absolute}
+.p1{left:calc(50% - 500px);top:60px;transform:rotate(-6deg)}
+.p2{left:calc(50% + 150px);top:90px;transform:rotate(4deg)}
+.p3{left:calc(50% - 520px);top:250px;transform:rotate(3deg)}
+.p4{left:calc(50% + 150px);top:420px;transform:rotate(-3deg)}
+.p5{left:calc(50% - 320px);top:480px;transform:rotate(-5deg)}
+.hq{position:absolute;left:0;bottom:60px;width:225px;text-align:left;color:#d8d3cb;font-size:.86rem;line-height:1.45}
+.hq .qm{display:block;font-family:var(--display);font-size:2rem;line-height:.6;color:var(--accent);margin-bottom:8px}
+.hy{position:absolute;right:0;top:170px;width:250px;text-align:right;color:#d8d3cb;font-size:.86rem;line-height:1.45}
+.hy b{display:block;font-family:var(--display);font-size:2.4rem;color:var(--fg);line-height:1;margin-bottom:8px}
+.fpm{display:none}
+@media (max-width:1040px){.p1{left:20px}.p3{left:10px}.p5{left:30px}.p2,.p4{left:auto;right:10px}}
+@media (max-width:820px){.stage{height:460px}.me{height:540px;bottom:-110px}.sun{width:400px;height:400px;bottom:-110px}.stage .fp,.hq,.hy{display:none}.fpm{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:24px 20px 26px;background:var(--bg-2);margin-inline:-20px;position:relative}.fpm .fp{white-space:normal;font-size:.8rem}.c1{left:0}.c2{left:auto;right:0}}
+@media (prefers-reduced-motion:reduce){.wave{animation:none}#hello{transition:none}}
+
+/* chiffres */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--paper-2);color:var(--ink);padding:22px 20px;border-radius:6px;transform:rotate(-1.5deg);box-shadow:0 18px 40px rgba(0,0,0,.45);position:relative}
+.stat:nth-child(even){transform:rotate(1.5deg)}
+.stat::before{content:"";position:absolute;left:14px;top:0;width:44px;height:6px;background:var(--accent);border-radius:0 0 4px 4px}
+.stat b{display:block;font-family:var(--display);font-size:2.5rem;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;margin-top:6px}
+.stat span{display:block;margin-top:8px;font-size:.88rem;color:var(--muted-ink)}
+@media (max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}.stat b{font-size:2rem;white-space:nowrap}}
+
+/* about */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.about .text{max-width:38rem;display:grid;gap:1rem;font-size:1.02rem}
+.about .side{display:grid;gap:14px}
+.spec{border-top:2px solid var(--ink);padding-top:12px}
+.spec b{font-family:var(--display);font-size:1.05rem}
+.spec p{color:var(--muted-ink);font-size:.95rem;margin-top:4px}
+@media (max-width:820px){.about{grid-template-columns:1fr}}
+
+/* parcours, barres orange façon Behance */
+.timeline{display:grid;gap:22px;max-width:52rem}
+.tl .bar{display:flex;align-items:stretch;background:var(--accent);color:#0b0b0b;font-family:var(--display);font-weight:800;font-size:.95rem;flex-wrap:wrap}
+.tl .yr{background:var(--fg);color:var(--ink);padding:7px 14px;position:relative;padding-right:22px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,0 100%)}
+.tl .co{padding:7px 14px;flex:1}
+.tl .role{padding:7px 14px;font-weight:700;font-size:.85rem;font-family:var(--body);align-self:center}
+.tl p{color:var(--muted);font-size:.95rem;margin-top:10px;padding-left:4px;max-width:44rem}
+.tl p b{color:var(--fg)}
+.formation{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.fbox{border:1px solid var(--line);border-radius:10px;padding:18px 20px 20px;background:var(--bg-2);position:relative;overflow:hidden;display:grid;gap:6px;align-content:start}
+.fbox::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--accent)}
+.fbox .eyebrow{color:var(--accent);font-size:.7rem}
+.fbox b{font-family:var(--display);display:block;font-size:1.08rem;line-height:1.2;text-wrap:balance}
+.fbox p{color:var(--muted);font-size:.9rem;line-height:1.45}
+.fbox .yr{position:absolute;right:14px;top:12px;font-family:var(--display);font-weight:800;font-size:1.6rem;color:rgba(255,255,255,.08);line-height:1}
+@media (max-width:820px){.formation{grid-template-columns:1fr}}
+@media (max-width:600px){.tl .role{flex-basis:100%;padding-top:0}.tl .co{white-space:nowrap}}
+
+/* compétences */
+.skills{display:grid;grid-template-columns:1.35fr 1fr;gap:18px;align-items:start}
+.box{border:1px solid var(--line-light);border-radius:8px;padding:22px;background:rgba(255,255,255,.35)}
+.box h3{font-size:1.15rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.box h3::before{content:"";width:10px;height:22px;background:var(--accent)}
+.skillgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.skill{padding:10px 0;border-top:1px solid var(--line-light)}
+.skill b{display:block;font-family:var(--display);font-size:.98rem}
+.skill span{color:var(--muted-ink);font-size:.88rem;line-height:1.4;display:block;margin-top:2px}
+.tgroup{margin-top:14px}
+.tgroup .eyebrow{color:var(--muted-ink);margin-bottom:10px}
+.tools{display:flex;flex-wrap:wrap;gap:12px}
+.tool{width:88px;height:88px;border-radius:50%;position:relative;background:conic-gradient(var(--accent) 0 74%,var(--line-light) 74% 100%);flex:none}
+.tool span{position:absolute;inset:4px;border-radius:50%;background:var(--paper-2);display:grid;place-items:center;text-align:center;font-weight:700;font-size:.74rem;line-height:1.1;padding:6px}
+.method{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;counter-reset:m}
+.method li{display:flex;gap:10px;align-items:baseline;font-weight:500;font-size:.95rem}
+.method li::before{counter-increment:m;content:"0" counter(m);font-family:var(--display);font-weight:800;color:var(--accent)}
+@media (max-width:920px){.skills{grid-template-columns:1fr}}
+@media (max-width:560px){.skillgrid{grid-template-columns:1fr}}
+
+
+/* page À propos façon Behance : bandeau orange de cartes résultats, puis texte et portrait */
+.aboutpage{padding-block:0;background:var(--paper);color:var(--ink)}
+.band{background:var(--accent);padding:26px 0 30px;overflow:hidden;position:relative}
+.band::before{content:"";position:absolute;inset:0;background:radial-gradient(40% 60% at 50% 0%,rgba(255,255,255,.25),transparent 70%)}
+.rcs{display:flex;gap:16px;padding-inline:24px;overflow-x:auto;scrollbar-width:none;position:relative;justify-content:safe center}
+.rcs::-webkit-scrollbar{display:none}
+.rc{flex:none;width:200px;background:#fff;color:var(--ink);border-radius:10px;padding:14px 14px 12px;box-shadow:0 18px 40px rgba(0,0,0,.28);transform:rotate(-3deg)}
+.rc:nth-child(even){transform:rotate(3deg);margin-top:10px}
+.rc b{display:block;font-family:var(--display);font-size:.86rem;line-height:1.2;min-height:2.4em}
+.rc .o,.atext .o,.facts .o,.lead2 .o{color:var(--accent)}
+.rc b .o{font-size:1.1em}
+.mini{margin-top:10px;display:flex;gap:8px;align-items:flex-end;height:74px;overflow:hidden;border-radius:6px;background:#f3f1ed;padding:8px}
+.mini img{width:44%;height:100%;object-fit:cover;object-position:top;border-radius:4px}
+.mbar{flex:1;display:grid;gap:6px;align-self:center}
+.mbar i{display:block;height:6px;background:#e3dfd8;border-radius:3px;width:var(--w)}
+.mbar i:nth-child(2){background:var(--accent)}
+.mini.chart{align-items:flex-end;gap:6px}
+.mini.chart span{flex:1;height:var(--h);background:#e3dfd8;border-radius:3px 3px 0 0}
+.mini.chart span:last-child{background:var(--accent)}
+.mq{flex:1;font-size:.62rem;border:1px solid var(--ink);border-radius:6px;padding:4px 6px;background:#111;color:#fff;align-self:center}
+.mq.on{background:var(--accent);border-color:var(--accent);font-weight:700}
+.aboutbody{padding-block:64px 0}
+.aboutbody .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:end}
+.atext{padding-bottom:64px;max-width:38rem;display:grid;gap:.9rem;font-size:.98rem;line-height:1.5}
+.atext h2{font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;margin-bottom:.4rem}
+.atext b{font-weight:700}
+.aportrait{position:relative;height:100%;min-height:520px;overflow:hidden;border-radius:14px 14px 0 0;background:#d9d5ce}
+.aportrait .oband{position:absolute;top:0;bottom:0;left:54%;width:24%;background:var(--accent);mix-blend-mode:multiply;z-index:2}
+.aportrait .swirl{position:absolute;right:-30%;top:10%;z-index:0;width:70%;aspect-ratio:1;border-radius:50%;border:26px solid rgba(255,255,255,.55);box-shadow:inset 0 0 40px rgba(0,0,0,.08)}
+.aportrait img{position:absolute;left:0;bottom:0;width:100%;height:94%;object-fit:cover;object-position:42% 0%;z-index:1;filter:drop-shadow(0 16px 30px rgba(0,0,0,.25))}
+@media (max-width:820px){.aboutbody .wrap{grid-template-columns:1fr}.aportrait{min-height:380px}.atext{padding-bottom:32px}}
+
+/* page compétences façon Behance : trois boîtes sur fond noir brillant */
+.skillpage{position:relative;overflow:hidden;background:var(--bg);color:var(--fg);padding-block:72px}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none}
+.blob.b1{width:520px;height:520px;right:-120px;top:-160px;background:radial-gradient(circle at 40% 40%,rgba(255,255,255,.18),rgba(242,101,34,.18) 45%,transparent 70%)}
+.blob.b2{width:600px;height:300px;right:-100px;bottom:-120px;background:radial-gradient(circle,rgba(242,101,34,.3),transparent 65%)}
+.skillpage .wrap{position:relative}
+.kicker{font-size:1.15rem;color:#d8d3cb;font-weight:400}
+.h2s{font-size:clamp(1.9rem,4.4vw,2.8rem);font-weight:800;margin-top:.2rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:.4em}
+.sgrid{display:grid;grid-template-columns:1.15fr .9fr 1.05fr;gap:16px;margin-top:2rem;align-items:start}
+.scol{display:grid;gap:16px}
+.sbox{border:1px solid #3a3733;background:rgba(20,19,17,.85);padding:22px 22px 24px;position:relative}
+.bt{font-size:1.5rem;font-weight:800;line-height:1;margin-bottom:18px;display:inline-block;position:relative;padding-left:10px}
+.bt span{position:relative;display:inline-block;isolation:isolate}
+.bt span::before{content:"";position:absolute;left:-10px;top:-6px;width:1.3em;height:.9em;background:var(--accent);z-index:-1}
+.legend{font-size:.74rem;color:var(--muted);margin:-8px 0 12px}
+.srow{display:flex;align-items:center;gap:14px;padding:6px 0}
+.srow b{display:block;font-family:var(--body);font-weight:700;font-size:.9rem;margin-bottom:6px}
+.srow > div{flex:1;min-width:0}
+.sbar{height:4px;background:#3a3733;border-radius:2px}
+.sbar i{display:block;height:100%;width:var(--w);background:var(--accent);border-radius:2px}
+.bd{width:28px;height:28px;border:2px solid var(--accent);color:var(--accent);font-family:var(--display);font-weight:800;font-size:.85rem;display:grid;place-items:center;flex:none}
+.trust{display:flex;align-items:center;gap:14px;margin-top:22px;border-top:1px solid #3a3733;padding-top:18px}
+.avs{display:flex}
+.avs span{width:44px;height:44px;border-radius:50%;border:3px solid var(--accent);background:#fff;color:var(--ink);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:.9rem;margin-right:-12px}
+.avs .plus{background:var(--ink);color:#fff;border-color:#fff;font-size:.66rem}
+.trust b{display:block;font-family:var(--display);font-size:.95rem}
+.trust small{color:var(--muted);font-size:.74rem}
+.tstack{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;justify-items:center}
+.tc{width:96px;height:96px;border-radius:50%;background:var(--accent);position:relative}
+.tc span{position:absolute;inset:6px;border-radius:50%;background:#1a1917;display:grid;place-items:center;align-content:center;text-align:center;font-family:var(--display);font-weight:800;font-size:.72rem;line-height:1.1;padding:4px;overflow:hidden;letter-spacing:-.01em}
+.tc span small{display:block;font-family:var(--body);font-weight:500;font-size:.58rem;color:var(--muted);margin-top:2px}
+.tc.on{background:var(--accent)}
+.tc.on span{background:var(--accent);color:#fff}
+.tc.on span small{color:#ffe1d1}
+.tstack + .hand{margin-top:16px;display:block}
+.dips{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dip{background:#fff;color:var(--ink);padding:12px;border-radius:4px;display:grid;gap:3px;box-shadow:0 10px 24px rgba(0,0,0,.4)}
+.dip small{font-size:.64rem;color:var(--muted-ink);letter-spacing:.06em;text-transform:uppercase}
+.dip b{font-family:var(--display);font-size:.9rem}
+.dip em{font-style:normal;font-size:.72rem;color:var(--muted-ink)}
+.more{font-size:.85rem;color:var(--muted);margin-top:12px}
+.more b{color:var(--fg)}
+.big{font-family:var(--display);font-weight:800;font-size:1.6rem;color:var(--accent);line-height:1;margin:8px 0 10px}
+.big small{display:block;font-family:var(--body);font-weight:500;font-size:.72rem;color:var(--muted);margin-top:5px;letter-spacing:.02em}
+.facts{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:7px;font-size:.86rem;line-height:1.4}
+.facts li{padding-left:14px;position:relative}
+.facts li::before{content:"";position:absolute;left:0;top:.5em;width:6px;height:6px;background:#fff}
+.lead2{font-size:.88rem;margin-bottom:8px}
+.point{font-size:.86rem;color:#d8d3cb;border-left:3px solid var(--accent);padding-left:10px;margin-top:4px}
+@media (max-width:980px){.sgrid{grid-template-columns:1fr 1fr}.sgrid > .sbox:last-child{grid-column:1/-1}}
+@media (max-width:640px){.big{font-size:1.35rem}.bt{font-size:1.3rem}.sbox{padding:18px 16px 20px}.tstack{gap:10px}.tc{width:86px;height:86px}}
+@media (max-width:640px){.sgrid{grid-template-columns:1fr}.dips{grid-template-columns:1fr}}
+
+/* projets */
+#projets{background:radial-gradient(45% 30% at 100% 0%,rgba(242,101,34,.16),transparent 70%),var(--bg)}
+.proj{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding-block:64px;border-top:1px solid var(--line)}
+.proj.light{border-top:0;border-radius:18px;padding:56px 40px;margin-block:12px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.proj > div:first-child{position:relative;min-width:0}
+.crumb{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1.6rem}
+.crumb span{border:1px solid var(--muted);border-radius:6px;padding:2px 10px;font-size:.74rem;font-weight:600;color:var(--muted)}
+.crumb span:last-child{border-color:var(--accent);color:var(--accent)}
+.proj .num{position:absolute;top:1.2rem;left:-.5rem;font-family:var(--display);font-weight:800;font-size:8rem;line-height:.8;color:var(--fg);opacity:.07;letter-spacing:-.05em;pointer-events:none;user-select:none}
+.proj.light .num{color:var(--ink);opacity:.07}
+.proj h3{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:800;position:relative}
+.proj .hand{margin-top:.6rem}
+.case{display:grid;gap:14px;margin-top:1.4rem}
+.case div{display:grid;grid-template-columns:118px 1fr;gap:12px;align-items:start}
+.case dt{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);padding-top:4px}
+.case dd{margin:0;font-size:.98rem;line-height:1.5}
+.impact{margin-top:1.4rem;background:var(--fg);color:var(--ink);padding:18px 22px;border-radius:6px;transform:rotate(-2deg);display:inline-block;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.proj.light .impact{background:var(--ink);color:var(--fg)}
+.impact b{display:block;font-family:var(--display);font-size:2.6rem;line-height:1;font-variant-numeric:tabular-nums}
+.impact span{display:block;font-size:.9rem;margin-top:4px;color:var(--accent);font-weight:700}
+.shot{display:grid;gap:18px;justify-items:center;padding:22px 10px;min-width:0}
+.phone{width:min(100%,300px);border:3px solid var(--fg);border-radius:34px;padding:9px;background:var(--bg);transform:rotate(3deg);box-shadow:0 40px 70px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.05)}
+.phone.l{transform:rotate(-3deg)}
+.proj.light .phone{border-color:var(--ink);background:var(--ink)}
+.phone img{border-radius:24px;width:100%}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;width:100%}
+.duo .phone{width:100%;margin-top:40px}
+.sms{border:3px solid var(--ink);border-radius:34px;padding:14px 11px 18px;background:#0b0b0b;color:#f2f2f2;font-size:.7rem;display:grid;gap:8px;transform:rotate(-3deg);box-shadow:0 40px 70px rgba(0,0,0,.5);font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sms .from{text-align:center;font-weight:700;font-size:.74rem;color:#e8e8e8;padding:4px 0 6px;border-bottom:1px solid #242424}
+.sms .when{text-align:center;color:#8d8d8d;font-size:.6rem;margin-top:4px}
+.sms .b{background:#262628;border-radius:16px 16px 16px 4px;padding:9px 11px;line-height:1.4;overflow-wrap:anywhere}
+.sms .lnk{color:#5aa0ff;text-decoration:underline}
+@media (max-width:560px){.duo{grid-template-columns:1fr}.duo .phone{margin-top:0}}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:16px;width:100%}
+.mosaic img{border-radius:8px;box-shadow:0 24px 50px rgba(0,0,0,.55)}
+.mosaic img:nth-child(1){transform:rotate(-3deg)}
+.mosaic img:nth-child(2){transform:rotate(3deg);margin-top:26px}
+.mosaic img:nth-child(3){grid-column:1/-1;width:62%;justify-self:center;transform:rotate(-1.5deg);margin-top:8px}
+.frame{width:100%;border-radius:10px;overflow:hidden;background:#fff;padding:18px;box-shadow:0 24px 50px rgba(0,0,0,.55)}
+.frame.logo{width:70%;transform:rotate(-2.5deg)}
+.frame + .frame{padding:0;transform:rotate(1.5deg)}
+.caption{font-size:.8rem;color:var(--muted);text-align:center;max-width:26rem}
+.proj.light .caption{color:var(--muted-ink)}
+.quizmock{width:min(100%,300px);border:3px solid var(--fg);border-radius:34px;padding:18px 16px;background:#111;color:#fff;font-size:.82rem;display:grid;gap:8px;transform:rotate(-3deg);box-shadow:0 40px 70px rgba(0,0,0,.6)}
+.quizmock .q{border:1px solid #fff;border-radius:8px;padding:8px 10px}
+.quizmock .q.on{background:var(--accent);border-color:var(--accent);font-weight:700}
+.quizmock .t{font-family:var(--display);font-weight:800;color:var(--accent);font-size:1rem}
+.schema{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%;max-width:420px}
+.schema div{border:3px solid var(--accent);border-radius:50%;aspect-ratio:1;display:grid;place-items:center;text-align:center;font-family:var(--display);font-weight:800;font-size:.9rem;padding:10px;background:rgba(242,101,34,.06)}
+.schema div:last-child{grid-column:1/-1;width:60%;justify-self:center}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:1.2rem}
+.card{background:var(--paper-2);color:var(--ink);padding:16px;border-radius:6px;box-shadow:0 14px 30px rgba(0,0,0,.35)}
+.card:nth-child(odd){transform:rotate(-1.5deg)}
+.card:nth-child(even){transform:rotate(1.5deg)}
+.card b{font-family:var(--display);color:var(--accent);font-size:1.6rem;display:block}
+.card strong{display:block;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;margin:6px 0}
+.card p{font-size:.88rem;color:var(--muted-ink)}
+@media (max-width:820px){.proj{grid-template-columns:1fr;gap:24px}.proj.light{padding:40px 22px}.cards3{grid-template-columns:1fr}.case div{grid-template-columns:1fr;gap:2px}.proj .num{font-size:6rem}}
+
+
+.vtools{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.2rem}
+.vtools .pill{font-size:.78rem;padding:7px 13px}
+.vwall{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:12px;width:100%;align-items:center}
+.vt{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.6);transform:rotate(-3deg);border:2px solid #2a2825;background:#000}
+.vt.big{transform:rotate(0);z-index:1;border-color:var(--fg);box-shadow:0 30px 70px rgba(0,0,0,.7)}
+.vt:last-child{transform:rotate(3deg)}
+.vt img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block}
+.vt .play{position:absolute;left:50%;top:50%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:rgba(255,255,255,.85);box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.vt .play::after{content:"";position:absolute;left:18px;top:13px;border-left:14px solid var(--ink);border-top:9px solid transparent;border-bottom:9px solid transparent}
+.vt .views{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.7);color:#fff;font-weight:700;font-size:.74rem;padding:4px 9px;border-radius:999px}
+.vt.big .views{background:var(--accent)}
+@media (max-width:820px){.vwall{gap:8px}.vt .play{width:34px;height:34px;margin:-17px 0 0 -17px}.vt .play::after{left:13px;top:9px;border-left-width:11px;border-top-width:7px;border-bottom-width:7px}}
+
+/* contact */
+.contact{position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 60% at 100% 100%,rgba(242,101,34,.25),transparent 70%);pointer-events:none}
+.contact .wrap{position:relative}
+.contact h2{font-size:clamp(2.6rem,8vw,5rem)}
+.contact .grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:center;margin-top:1.5rem}
+.clist{display:grid;gap:10px;margin-top:1.4rem}
+.crow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.crow code{font-family:var(--body);background:var(--fg);color:var(--ink);padding:10px 18px;border-radius:999px;font-weight:700;font-size:.95rem}
+.crow button{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:8px 14px;font:inherit;font-size:.8rem;cursor:pointer}
+.crow button:hover,.crow button:focus-visible{color:var(--fg);border-color:var(--fg)}
+.crow a{color:var(--muted);font-size:.85rem}
+.lk{display:inline-flex;justify-self:start;width:fit-content;align-items:center;gap:0;border-radius:999px;overflow:hidden;background:var(--fg);color:var(--ink);text-decoration:none;font-weight:700;font-size:.95rem;max-width:100%;box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.lk .lki{display:grid;place-items:center;padding:0 0 0 16px;color:var(--accent)}
+.lk .lkt{padding:10px 14px 10px 10px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lk b{background:var(--accent);color:#fff;padding:10px 16px;align-self:stretch;display:flex;align-items:center;white-space:nowrap}
+.lk:hover b{background:var(--accent-deep)}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-family:var(--display);font-weight:800;padding:18px 34px;border-radius:12px;font-size:1.05rem;box-shadow:0 18px 40px rgba(242,101,34,.35)}
+.btn:hover{background:var(--accent-deep)}
+footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line)}
+@media (max-width:720px){.contact .grid{grid-template-columns:1fr}.contact .hand{transform:none;font-size:1.5rem}.lk .lkt{white-space:normal;overflow-wrap:anywhere;font-size:.85rem}.lk b{padding:10px 12px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arrow" viewBox="0 0 60 30"><path d="M3 25 C 18 6, 36 4, 54 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M46 6 L55 12 L46 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<nav class="nav"><div class="wrap">
+  <div class="brand"><i></i>IDRISS NUBOOTHEA</div>
+  <ul>
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero2">
+  <div class="wm2" aria-hidden="true">PORTFOLIO</div>
+  <div class="wrap">
+    <p class="hi" aria-live="polite"><span id="hello">Bonjour !</span></p>
+    <p class="iam">Je suis <b>Idriss Nuboothea</b> <span class="wave" aria-hidden="true">👋</span></p>
+    <h1>Chargé de marketing et communication</h1>
+    <div class="stage">
+      <div class="sun"></div>
+      <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+      <img class="me" src="img/cutout.webp" alt="Idriss Nuboothea">
+      <span class="fp p1">🎯 Stratégie et positionnement</span>
+      <span class="fp p2">📱 Marketing digital et réseaux sociaux</span>
+      <span class="fp p3">⭐ Branding et création de contenus</span>
+      <span class="fp p4">🤖 CRM et marketing direct</span>
+      <span class="fp p5">📊 Études de marché et data</span>
+      <div class="hq"><span class="qm">“</span>Un message trop fréquent agace, un message bien dosé fait agir. C'est la règle que j'applique à chaque campagne, du brief au bilan.</div>
+      <div class="hy"><b>12 mois</b>en entreprise à La Réunion : trade marketing chez Ferebam (GBH), puis marketing direct et fidélisation chez Orange Réunion Mayotte, en stage puis en CDD.</div>
+    </div>
+    <div class="fpm">
+      <span class="fp">🎯 Stratégie et positionnement</span><span class="fp">📱 Marketing digital et réseaux sociaux</span><span class="fp">⭐ Branding et création de contenus</span><span class="fp">🤖 CRM et marketing direct</span><span class="fp">📊 Études de marché et data</span>
+    </div>
+  </div>
+</header>
+
+<section id="apropos" class="aboutpage">
+  <div class="band">
+    <div class="rcs">
+      <div class="rc"><b><span class="o">800</span> personnes accueillies en cinéma privé</b><div class="mini"><img src="img/quiz_vaiana.jpg" alt=""><div class="mbar"><i style="--w:100%"></i><i style="--w:70%"></i><i style="--w:85%"></i></div></div></div>
+      <div class="rc"><b><span class="o">12 000</span> clients invités à l'étude clients</b><div class="mini chart"><span style="--h:40%"></span><span style="--h:65%"></span><span style="--h:55%"></span><span style="--h:90%"></span><span style="--h:100%"></span></div></div>
+      <div class="rc"><b><span class="o">16</span> Orange Quiz conçus en huit mois</b><div class="mini"><div class="mq">Q9 · la question du mois</div><div class="mq on">Félicitations !</div></div></div>
+      <div class="rc"><b><span class="o">189</span> campagnes SMS et e-mail envoyées</b><div class="mini"><img src="img/koungou.jpg" alt=""><div class="mbar"><i style="--w:90%"></i><i style="--w:100%"></i><i style="--w:60%"></i></div></div></div>
+      <div class="rc"><b><span class="o">243</span> répondants au mémoire de master</b><div class="mini chart"><span style="--h:30%"></span><span style="--h:100%"></span><span style="--h:80%"></span><span style="--h:45%"></span><span style="--h:60%"></span></div></div>
+      <div class="rc"><b><span class="o">3</span> visuels d'offres flash déclinés en PLV</b><div class="mini"><img src="img/freinage.jpg" alt=""><img src="img/filtration.jpg" alt=""></div></div>
+      <div class="rc"><b><span class="o">54 K</span> vues sur une vidéo Ferebam tournée au smartphone</b><div class="mini"><img src="img/video_recrute.jpg" alt=""><div class="mbar"><i style="--w:100%"></i><i style="--w:55%"></i><i style="--w:30%"></i></div></div></div>
+      <div class="rc"><b><span class="o">1</span> logo dessiné, de l'esquisse à la charte</b><div class="mini"><img src="img/logo.jpg" alt="" style="width:100%"></div></div>
+    </div>
+  </div>
+  <div class="aboutbody"><div class="wrap">
+    <div class="atext">
+      <h2>À propos.</h2>
+      <p>Un bon message ne vient pas d'une suite de tâches marketing sans lien.<br>Il vient d'un système : le bon public, le bon canal, le bon moment, et une mesure derrière.</p>
+      <p><b>Je suis Idriss Nuboothea, chargé de marketing et communication à La Réunion.</b> J'aide une équipe marketing à transformer ses envois en réponses : des campagnes que les clients lisent, des jeux qui font participer, des études qui disent quoi changer.</p>
+      <p>J'ai commencé chez Carrefour, en réception logistique puis en caisse. C'est là que j'ai compris qu'une promotion ne vaut que si le client la voit, la comprend et y répond. Depuis, j'ai travaillé <span class="o">le trade marketing et la PLV chez Ferebam (GBH), puis le marketing direct, les jeux concours, l'événementiel et l'écoute client chez Orange Réunion Mayotte.</span> Plutôt que de traiter chaque canal à part, je les relie.</p>
+      <p>Beaucoup d'entreprises ont déjà une base clients, des réseaux sociaux, des campagnes. Mais ces briques travaillent souvent chacune de leur côté : des messages trop fréquents, des clients qui n'ouvrent plus, des résultats qu'on ne sait pas lire.</p>
+      <p>Mon rôle est de tenir la chaîne du début à la fin, <span class="o">du brief à la segmentation, de la rédaction au paramétrage, de l'envoi au bilan,</span> pour que l'équipe gagne en clarté, en régularité et en résultats.</p>
+      <p><b>Mon objectif est simple :</b> concevoir des messages que les gens lisent, les envoyer au bon moment, et <b>mesurer leur efficacité à partir des résultats.</b></p>
+    </div>
+    <div class="aportrait">
+      <img src="img/illustration.png" alt="Portrait illustré d'Idriss Nuboothea">
+      <div class="swirl"></div>
+      <div class="oband"></div>
+    </div>
+  </div></div>
+</section>
+
+<section id="parcours"><div class="wrap">
+  <div class="head">
+    <div><p class="eyebrow">Ce que mon parcours m'a appris</p><h2 class="h2">Du terrain à la <span class="hand" style="font-size:.85em">stratégie marketing</span></h2></div>
+    <span class="note">ce que j'ai fait <svg><use href="#arrow"/></svg></span>
+  </div>
+  <div class="timeline" style="margin-top:2.2rem">
+    <div class="tl">
+      <div class="bar"><span class="yr">2026</span><span class="co">Orange Réunion Mayotte</span><span class="role">Marketing direct et fidélisation</span></div>
+      <p><b>Stage puis CDD, janvier à septembre 2026.</b> Campagnes SMS et e-mail hebdomadaires vers des dizaines de milliers de clients : segmentation, rédaction, paramétrage, reporting. Quiz mensuels Réunion et Mayotte, opération cinéma, enquête clients, benchmark fidélité.</p>
+    </div>
+    <div class="tl">
+      <div class="bar"><span class="yr">2025</span><span class="co">Ferebam, groupe GBH</span><span class="role">Trade marketing</span></div>
+      <p><b>Assistant marketing et communication, trois mois.</b> Visuels d'offres fournisseurs, PLV, vidéos courtes pour les réseaux (jusqu'à 54 000 vues), dispositif d'avis clients.</p>
+    </div>
+    <div class="tl">
+      <div class="bar"><span class="yr">Avant</span><span class="co">Carrefour, groupe GBH</span><span class="role">Réception logistique et caisse</span></div>
+      <p>Terrain, relation client, rythme du commerce : là où j'ai vu ce qu'une promotion devient une fois en rayon.</p>
+    </div>
+  </div>
+  <div class="formation">
+    <div class="fbox"><span class="yr">2026</span><p class="eyebrow">Formation</p><b>Master 2 marketing, IAE Réunion</b><p>Mémoire sur la pression communicationnelle et l'évitement des e-mails et SMS, 243 répondants, SPSS. Master 1 sciences de gestion en 2025.</p></div>
+    <div class="fbox"><span class="yr">2024</span><p class="eyebrow">Formation</p><b>Licence AES, Université de La Réunion</b><p>Mention assez bien, en double cursus avec une classe préparatoire au lycée Bellepierre.</p></div>
+    <div class="fbox"><span class="yr">2025</span><p class="eyebrow">Distinction</p><b>Trophée Entreprise &amp; Territoire</b><p>Lauréat, prix de l'entreprise environnementale.</p></div>
+  </div>
+</div></section>
+
+<section id="competences" class="skillpage">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap">
+    <p class="kicker">Marketing et communication, du message à la mesure</p>
+    <h2 class="h2s">Mes <span class="hl">compétences et outils</span> en un coup d'œil <span class="hand" style="font-size:.6em;color:#fff">jugez sur pièces</span></h2>
+    <div class="sgrid">
+      <div class="sbox">
+        <h3 class="bt"><span>Mes</span> compétences</h3>
+        <p class="legend">Le chiffre indique le nombre de projets de ce portfolio où la compétence est mise en œuvre, sur huit.</p>
+        <div class="srow"><div><b>Communication et rédaction</b><div class="sbar"><i style="--w:75%"></i></div></div><span class="bd">6</span></div>
+        <div class="srow"><div><b>Marketing direct et CRM</b><div class="sbar"><i style="--w:50%"></i></div></div><span class="bd">4</span></div>
+        <div class="srow"><div><b>Marketing digital et réseaux sociaux</b><div class="sbar"><i style="--w:63%"></i></div></div><span class="bd">5</span></div>
+        <div class="srow"><div><b>Contenus, visuels et branding</b><div class="sbar"><i style="--w:63%"></i></div></div><span class="bd">5</span></div>
+        <div class="srow"><div><b>Gestion de projet et coordination</b><div class="sbar"><i style="--w:50%"></i></div></div><span class="bd">4</span></div>
+        <div class="srow"><div><b>Analyse de données et reporting</b><div class="sbar"><i style="--w:38%"></i></div></div><span class="bd">3</span></div>
+        <div class="srow"><div><b>Stratégie marketing et positionnement</b><div class="sbar"><i style="--w:25%"></i></div></div><span class="bd">2</span></div>
+        <div class="srow"><div><b>Études de marché et veille</b><div class="sbar"><i style="--w:25%"></i></div></div><span class="bd">2</span></div>
+        <div class="srow"><div><b>Trade marketing et promotion des ventes</b><div class="sbar"><i style="--w:25%"></i></div></div><span class="bd">2</span></div>
+        <div class="srow"><div><b>Événementiel et jeux concours</b><div class="sbar"><i style="--w:25%"></i></div></div><span class="bd">2</span></div>
+        <div class="trust">
+          <div class="avs"><span>O</span><span>F</span><span>C</span><span class="plus">IAE</span></div>
+          <div><b>Ils m'ont fait confiance</b><small>Orange Réunion Mayotte, Ferebam et Carrefour (GBH), IAE Réunion</small></div>
+        </div>
+      </div>
+      <div class="scol">
+        <div class="sbox">
+          <h3 class="bt"><span>Mes</span> outils</h3>
+          <div class="tstack">
+            <div class="tc"><span>Adobe<small>Ps · Ai · Id · Pr</small></span></div>
+            <div class="tc"><span>Eloquant<small>quiz et enquêtes</small></span></div>
+            <div class="tc"><span>HTML<small>et CSS</small></span></div>
+            <div class="tc"><span>Canva<small>et PowerPoint</small></span></div>
+            <div class="tc"><span>SPSS<small>et Excel</small></span></div>
+            <div class="tc on"><span>Meta Ads<small>campagnes</small></span></div>
+          </div>
+          <p class="hand" style="font-size:1.2rem;color:#fff;transform:rotate(-1deg)">les outils du quotidien, et la liste <span style="color:var(--accent)">s'allonge</span></p>
+        </div>
+        <div class="sbox">
+          <h3 class="bt"><span>Dist</span>inctions</h3>
+          <div class="dips">
+            <div class="dip"><small>Trophée · 2025</small><b>Entreprise &amp; Territoire</b><em>Lauréat, prix de l'entreprise environnementale</em></div>
+            <div class="dip"><small>IAE Réunion · 2026</small><b>Mémoire de master</b><em>Pression communicationnelle et évitement, 243 répondants, SPSS</em></div>
+          </div>
+          <p class="more">Master 2 marketing à l'IAE Réunion, détail dans <b>Parcours</b>.</p>
+        </div>
+      </div>
+      <div class="sbox">
+        <h3 class="bt"><span>Ce que</span> j'ai appris</h3>
+        <p class="big">Le saviez-vous<small>mesuré sur mes propres enquêtes</small></p>
+        <ul class="facts">
+          <li>Ce qui fait fuir un client, ce n'est pas le nombre d'envois, c'est <span class="o">la pression qu'il ressent</span>.</li>
+          <li>Une bonne image de marque <span class="o">ne protège pas</span> d'un message mal dosé.</li>
+          <li>Profils les plus sensibles : <span class="o">moins de 38 ans, mono-équipés mobile, joints par e-mail seul</span>.</li>
+          <li>Un client sur cinq <span class="o">ne se souvient d'aucun message reçu</span>.</li>
+        </ul>
+        <p class="big">Ma méthode<small>comment je m'y prends</small></p>
+        <ul class="facts">
+          <li><span class="o">L'objectif et le public</span> d'abord.</li>
+          <li><span class="o">Le canal et le moment</span>, puis un message court.</li>
+          <li>Tester, <span class="o">mesurer, ajuster</span>.</li>
+          <li>Documenter pour que <span class="o">l'équipe puisse refaire</span>.</li>
+        </ul>
+        <p class="point">Du brief au bilan, chaque semaine en 2026 chez Orange Réunion Mayotte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projets"><div class="wrap">
+  <div class="head">
+    <div><p class="eyebrow">Projets</p><h2 class="h2">Huit projets, du message <span class="hl">au résultat.</span></h2></div>
+    <span class="note">mon travail, sur pièces <svg><use href="#arrow"/></svg></span>
+  </div>
+
+  <article class="proj" id="p1" style="margin-top:2rem">
+    <div>
+      <div class="num" aria-hidden="true">01</div>
+      <div class="crumb"><span>Portfolio</span><span>Événementiel et jeu concours</span></div>
+      <h3>Opération cinéma Vaiana</h3>
+      <span class="hand">Orange Réunion, juillet 2026</span>
+      <dl class="case">
+        <div><dt>Rôle</dt><dd>Conception du jeu concours, création du mini-site embarqué, paramétrage du quiz Eloquant, coordination des séances avec les cinémas.</dd></div>
+        <div><dt>Contexte</dt><dd>Créer une expérience client autour de l'univers Vaiana, hors de l'écran. Quiz du 10 au 16 juillet, deux places à gagner, popcorn et boisson offerts, danseuses tahitiennes avant la séance.</dd></div>
+        <div><dt>Actions</dt><dd>Mécanique et règlement, mentions RGPD, mini-site embarqué en thème sombre avec un seul bouton, quiz Eloquant, séances à Saint-Pierre (22 juillet) et Sainte-Marie (24 juillet).</dd></div>
+        <div><dt>Impact</dt><dd>Un format standardisé, repris ensuite pour les opérations suivantes.</dd></div>
+      </dl>
+      <div class="impact"><b>800</b><span>personnes accueillies sur deux séances privées</span></div>
+    </div>
+    <div class="shot">
+      <div class="phone"><img src="img/quiz_vaiana.jpg" alt="Mini-site embarqué Orange Quiz Vaiana"></div>
+      <p class="caption">Le mini-site embarqué du quiz, thème sombre, un seul bouton.</p>
+    </div>
+  </article>
+
+  <article class="proj" id="p2">
+    <div>
+      <div class="num" aria-hidden="true">02</div>
+      <div class="crumb"><span>Portfolio</span><span>Étude clients</span></div>
+      <h3>Enquête clients sur la pression des communications</h3>
+      <span class="hand">Orange Réunion, août 2026</span>
+      <dl class="case">
+        <div><dt>Rôle</dt><dd>Conception du questionnaire, montage sur Eloquant, analyse SPSS, rapport et recommandations.</dd></div>
+        <div><dt>Problème</dt><dd>Les tableaux de bord mesurent les envois et les clics, pas la perception de la pression commerciale ni les comportements d'évitement.</dd></div>
+        <div><dt>Approche</dt><dd>26 questions en échelle de 1 à 10, cinq blocs (profil, fréquence, perception, usage, image), questions courtes et accessibles, diffusion par SMS à 12 000 clients.</dd></div>
+        <div><dt>Résultats</dt><dd>Trois profils plus sensibles dans l'échantillon (moins de 38 ans, mono-équipés mobile, réception par e-mail seule) et un plan d'action : indicateurs de pression perçue, fréquence par profil, respect du canal préféré.</dd></div>
+      </dl>
+    </div>
+    <div class="shot">
+      <div class="cards3" style="width:100%;margin:0">
+        <div class="card"><b>12 000</b><strong>invités</strong><p>clients contactés par SMS depuis Eloquant</p></div>
+        <div class="card"><b>256</b><strong>réponses</strong><p>dont 213 questionnaires complets</p></div>
+        <div class="card"><b>26</b><strong>questions</strong><p>en cinq blocs, échelle de 1 à 10</p></div>
+      </div>
+      <p class="caption">Données internes anonymisées par respect de la confidentialité.</p>
+    </div>
+  </article>
+
+  <article class="proj" id="p3">
+    <div>
+      <div class="num" aria-hidden="true">03</div>
+      <div class="crumb"><span>Portfolio</span><span>Jeux concours mensuels</span></div>
+      <h3>Orange Quiz mensuels</h3>
+      <span class="hand">Réunion et Mayotte, 2026</span>
+      <dl class="case">
+        <div><dt>Rôle</dt><dd>Conception mensuelle, paramétrage Eloquant, feuille de style, mode opératoire pour l'équipe. Janvier à août 2026, un quiz par mois et par territoire.</dd></div>
+        <div><dt>Problème</dt><dd>Une chaîne de tâches répétitives avec un risque d'erreur à chaque fois : question, lot, dates, règlement, identification, messages de fin.</dd></div>
+        <div><dt>Solution</dt><dd>Structure standardisée (huit questions d'identification fixes, une question de jeu, branchement automatique pour les mineurs), seuls le thème, le lot et le visuel changent. Thème sombre noir et orange lisible sur mobile.</dd></div>
+        <div><dt>Impact</dt><dd>Un processus standardisé et transmissible : charte et mode opératoire pas à pas remis à l'équipe fin août 2026, repris après mon départ.</dd></div>
+      </dl>
+    </div>
+    <div class="shot">
+      <div class="quizmock" aria-label="Structure type d'un Orange Quiz">
+        <div class="t">ORANGE QUIZ · structure type</div>
+        <div class="q">Q1 à Q8 · identification client</div>
+        <div class="q">Q5 · plus de 18 ans ? → sortie si non</div>
+        <div class="q on">Q9 · la question du mois, 20 points</div>
+        <div class="q">Acceptation du règlement</div>
+        <div class="q">Félicitations · merci d'avoir participé</div>
+      </div>
+      <p class="caption">Schéma de la structure fixe, thème sombre de la charte.</p>
+    </div>
+  </article>
+
+  <article class="proj light" id="p4">
+    <div>
+      <div class="num" aria-hidden="true">04</div>
+      <div class="crumb"><span>Portfolio</span><span>Marketing direct</span></div>
+      <h3>Campagnes SMS et e-mail multicanales</h3>
+      <span class="hand">Orange Réunion Mayotte, 2026</span>
+      <dl class="case">
+        <div><dt>Rôle</dt><dd>Rédaction, e-mails et landing pages, paramétrage, envoi et suivi (HTML et CSS). Des dizaines de milliers de clients contactés chaque semaine sur deux territoires.</dd></div>
+        <div><dt>Contrainte</dt><dd>Longueur et encodage SMS, désabonnement obligatoire, lecture mobile, pression commerciale maîtrisée. La contrainte devient la méthode.</dd></div>
+      </dl>
+      <div class="cards3">
+        <div class="card"><b>01</b><strong>Plan de changement de mobile</strong><p>SMS hebdomadaire aux clients mobile éligibles, variables personnalisées, gestion du désabonnement.</p></div>
+        <div class="card"><b>02</b><strong>Offre Disney+ Standard</strong><p>SMS promotionnel pendant les vacances : prix de lancement, date de fin, souscription depuis le décodeur, lien STOP.</p></div>
+        <div class="card"><b>03</b><strong>Drive to store, Koungou</strong><p>E-mail avec carte du quartier (Mayotte), horaires, offre Fibre à partir de 39,90 euros par mois, bouton unique.</p></div>
+      </div>
+    </div>
+    <div class="shot">
+      <div class="duo">
+        <div class="sms" aria-label="Trois SMS envoyés depuis l'expéditeur Orange Info">
+          <div class="from">Orange Info</div>
+          <div class="when">mar. 10 mars à 14:38</div>
+          <div class="b">Profitez des vacances pour explorer l'univers d'Avatar sur Disney+ Standard ! 6,99euros les 6 premiers mois puis 10,99euros/mois. Offre valable jusqu'au 15/03. Souscription sur votre decodeur TV ou votre espace client. Resiliable a tout moment. STOP SMS <span class="lnk">https://r.orange.fr/r/Sstopsms</span></div>
+          <div class="when">ven. 3 avr. à 09:38</div>
+          <div class="b">Vous attendiez le bon moment pour craquer sur le Samsung Galaxy S26 ? Il est a 709euros avec le forfait KomZot 150Go 4G/5G a 49,99euros avec engagement de 24 mois jusqu'au 28/04. Voir conditions en boutiques Orange : <span class="lnk">https://agence.orange.fr/</span> Sous reserve de stock disponible. STOP SMS 275</div>
+          <div class="when">mer. 3 juin à 10:39</div>
+          <div class="b">Double gagnant : Le Google Pixel 10A a 319euros en passant sur le forfait KomZot 150Go 4G/5G a 49,99euros jusqu'au 15/07! Voir conditions en boutiques Orange: <span class="lnk">https://agence.orange.fr/</span> Sous reserve de stock disponible. STOP SMS 275</div>
+        </div>
+        <div class="phone l"><img src="img/koungou.jpg" alt="E-mail drive to store SAMDISCOUNT DOUKA à Koungou"></div>
+      </div>
+      <p class="caption">Exemples de SMS Orange Info et d'e-mail envoyés en 2026.</p>
+    </div>
+  </article>
+
+  <article class="proj" id="p5">
+    <div>
+      <div class="num" aria-hidden="true">05</div>
+      <div class="crumb"><span>Portfolio</span><span>Stratégie et fidélisation</span></div>
+      <h3>Benchmark fidélité et concept B2C</h3>
+      <span class="hand">Orange Réunion Mayotte, 2026</span>
+      <dl class="case">
+        <div><dt>Rôle</dt><dd>Veille, analyse comparative, rédaction du concept, présentation (PowerPoint, Word, Excel).</dd></div>
+        <div><dt>Contexte</dt><dd>La direction marketing réfléchissait à un programme de fidélité grand public ; aucune comparaison structurée des programmes locaux n'était disponible dans le cadre de la mission.</dd></div>
+        <div><dt>Actions</dt><dd>Recensement des programmes nationaux et locaux présents à La Réunion, grille de comparaison commune (mécanique, récompenses, partenaires, coût pour le client), concept adossé à des commerces réunionnais partenaires, opportunité de différenciation identifiée sur le marché local.</dd></div>
+        <div><dt>Résultat</dt><dd>Un comparatif de référence et un concept documenté remis à la direction marketing. Contenu anonymisé par respect de la confidentialité.</dd></div>
+      </dl>
+    </div>
+    <div class="shot">
+      <div class="schema"><div>Client</div><div>Orange</div><div>Commerces partenaires</div></div>
+      <p class="caption">Le principe du concept : des avantages chez des commerces locaux plutôt que des remises sur les seuls produits Orange.</p>
+    </div>
+  </article>
+
+  <article class="proj" id="p6">
+    <div>
+      <div class="num" aria-hidden="true">06</div>
+      <div class="crumb"><span>Portfolio</span><span>Trade marketing</span></div>
+      <h3>Trade marketing et contenus</h3>
+      <span class="hand">Ferebam, groupe GBH, 2025</span>
+      <dl class="case">
+        <div><dt>Rôle</dt><dd>Création des visuels d'offres fournisseurs, PLV, contenus photo et vidéo pour la page Facebook, dispositif d'avis clients.</dd></div>
+        <div><dt>Contexte</dt><dd>Ferebam distribue pièces auto et outillage aux professionnels. Une offre flash ne sert à rien si les garagistes ne la voient pas le jour même.</dd></div>
+        <div><dt>Réalisations</dt><dd>Visuels d'offres flash (freinage, filtrations) déclinés en PLV et sur Facebook, affiche d'incitation à l'avis client avec QR code, page du réseau Technicar Services.</dd></div>
+        <div><dt>Impact</dt><dd>Un dispositif cohérent entre communication digitale et activation en point de vente, réutilisé d'une offre à l'autre.</dd></div>
+      </dl>
+    </div>
+    <div class="shot">
+      <div class="mosaic">
+        <img src="img/freinage.jpg" alt="Visuel offre freinage -50 % réservée aux professionnels">
+        <img src="img/filtration.jpg" alt="Visuel offre filtrations -30 %">
+        <img src="img/satisfaction.jpg" alt="Affiche Donne-nous les 5 étoiles avec QR code">
+      </div>
+    </div>
+  </article>
+
+  <article class="proj" id="p7">
+    <div>
+      <div class="num" aria-hidden="true">07</div>
+      <div class="crumb"><span>Portfolio</span><span>Identité visuelle</span></div>
+      <h3>Tradisyon Lontan, identité visuelle</h3>
+      <span class="hand">Projet étudiant, facette créative</span>
+      <dl class="case">
+        <div><dt>Rôle</dt><dd>Conception du logo réalisée individuellement, de l'esquisse aux déclinaisons. Charte et supports dans la foulée.</dd></div>
+        <div><dt>Contexte</dt><dd>Tradisyon Lontan, « l'expérience immersive Réunionnaise », un concept de maison immersive autour du patrimoine créole. Il fallait une marque qui dise la transmission sans tomber dans le folklore.</dd></div>
+        <div><dt>Choix</dt><dd>Lettrage fait main aux formes rondes, silhouette d'un aîné et d'un enfant intégrée au N final, brun terre #4B2106 en couleur principale, vert anis, rouge brique, bleu lagon et jaune en accents. Monogramme TL pour les petits formats.</dd></div>
+        <div><dt>Déclinaisons</dt><dd>Mug, tote bag, enseigne, t-shirt, beach flag, publication Instagram, charte typographique.</dd></div>
+      </dl>
+    </div>
+    <div class="shot">
+      <div class="frame logo"><img src="img/logo.jpg" alt="Logo Tradisyon Lontan"></div>
+      <div class="frame"><img src="img/planche.jpg" alt="Planche de marque Tradisyon Lontan : palette, typographie, mockups"></div>
+    </div>
+  </article>
+
+  <article class="proj" id="p8">
+    <div>
+      <div class="num" aria-hidden="true">08</div>
+      <div class="crumb"><span>Portfolio</span><span>Contenus vidéo</span></div>
+      <h3>Contenus vidéo pour les réseaux</h3>
+      <span class="hand">Ferebam, groupe GBH, 2025</span>
+      <dl class="case">
+        <div><dt>Rôle</dt><dd>Idée, tournage au smartphone en magasin avec l'équipe, montage, publication sur les réseaux de Ferebam.</dd></div>
+        <div><dt>Contexte</dt><dd>Faire vivre la page d'un distributeur de pièces auto et d'outillage, sans budget de production, en montrant les gens derrière le comptoir.</dd></div>
+        <div><dt>Formats</dt><dd>Vidéos courtes verticales : présentation de la team du magasin de Saint-André, annonce de recrutement avec une touche d'humour, coulisses de la team marketing.</dd></div>
+        <div><dt>Résultats</dt><dd>54 000 vues pour la vidéo de recrutement, 20 000 pour la team marketing, 2 700 pour la présentation de l'équipe.</dd></div>
+      </dl>
+      <div class="vtools"><span class="pill">Tournage smartphone</span><span class="pill">Premiere Pro</span><span class="pill">Canva</span></div>
+      <div class="impact"><b>54 K</b><span>vues sur la vidéo de recrutement</span></div>
+    </div>
+    <div class="shot">
+      <div class="vwall">
+        <div class="vt"><img src="img/video_team.jpg" alt="Vidéo La team Ferebam Saint-André"><span class="play"></span><span class="views">2,7 K vues</span></div>
+        <div class="vt big"><img src="img/video_recrute.jpg" alt="Vidéo On recrute, ma future femme"><span class="play"></span><span class="views">54 K vues</span></div>
+        <div class="vt"><img src="img/video_marketing.jpg" alt="Vidéo Team Marketing Ferebam"><span class="play"></span><span class="views">20 K vues</span></div>
+      </div>
+      <p class="caption">Trois vidéos publiées sur les réseaux de Ferebam en 2025, tournées et montées par mes soins.</p>
+    </div>
+  </article>
+</div></section>
+
+<section id="contact" class="contact dark2"><div class="wrap">
+  <h2>Parlons-en.</h2>
+  <span class="hand">un profil marketing opérationnel, CRM et communication ?</span>
+  <div class="grid">
+    <div>
+      <p class="muted" style="font-size:1.1rem">Disponible immédiatement à La Réunion, en CDD comme en CDI.</p>
+      <div class="clist">
+        <div class="crow"><code id="mail">idriss.nuboothea27@gmail.com</code><button type="button" data-copy="mail">Copier</button></div>
+        <div class="crow"><code id="tel">06 92 08 69 93</code><button type="button" data-copy="tel">Copier</button></div>
+        <a class="lk" href="https://www.linkedin.com/in/idriss-nuboothea/" target="_blank" rel="noopener"><span class="lki" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span class="lkt">linkedin.com/in/idriss-nuboothea</span><b>Ouvrir ↗</b></a>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">Idriss Nuboothea · Portfolio 2026 · Les visuels Orange et Ferebam sont présentés à titre d'illustration de mon travail ; les données internes ont été anonymisées.</div></footer>
+
+<script>
+(function(){
+  var words=['Bonjour !','Bonzour !','Hello !','Hola !','Ciao !','Olá !','Hallo !','Salam !'];
+  var el=document.getElementById('hello'); if(!el) return; var i=0;
+  setInterval(function(){
+    el.classList.add('out');
+    setTimeout(function(){ i=(i+1)%words.length; el.textContent=words[i]; el.classList.remove('out'); },360);
+  },2200);
+})();
+
+document.querySelectorAll('[data-copy]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.copy);var t=el.textContent;
+    function done(){b.textContent='Copié';setTimeout(function(){b.textContent='Copier'},1500)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Sélectionné'}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,fallback)}else{fallback()}
+  });
+});
+</script>
+
+</body>
+</html>
