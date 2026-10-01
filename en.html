@@ -61,13 +61,14 @@ section{padding-block:72px}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
 .nav .brand{font-family:var(--display);font-weight:800;font-size:1rem;letter-spacing:.02em}
 .nav .brand i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--accent);margin-right:8px}
-.lang{display:flex;gap:4px;margin-left:auto;margin-right:18px;border:1px solid var(--line);border-radius:999px;padding:3px}
-.lang a{text-decoration:none;color:var(--muted);font-weight:700;font-size:.78rem;padding:4px 10px;border-radius:999px}
-.lang a.on{background:var(--accent);color:#fff}
-.hero2 .langpick{display:inline-flex;gap:10px;margin-top:14px;font-size:.9rem;color:var(--muted)}
-.hero2 .langpick a{color:var(--fg);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 14px}
-.hero2 .langpick a.on{background:var(--fg);color:var(--ink)}
-@media (max-width:720px){.lang{margin-right:0}}
+.langdd{position:relative;margin-left:auto;margin-right:16px;font-family:var(--body)}
+.langdd summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;border:1.5px solid var(--fg);border-radius:8px;padding:7px 12px 7px 14px;font-weight:800;font-size:.9rem;color:var(--fg);background:var(--bg);box-shadow:4px 4px 0 var(--accent);user-select:none}
+.langdd summary::-webkit-details-marker{display:none}
+.langdd summary svg{transition:transform .2s}
+.langdd[open] summary svg{transform:rotate(180deg)}
+.langdd a{position:absolute;left:0;right:0;top:calc(100% + 6px);display:block;background:var(--bg);border:1.5px solid var(--fg);border-radius:8px;padding:9px 14px;text-decoration:none;color:var(--fg);font-weight:600;font-size:.9rem;box-shadow:4px 4px 0 var(--accent);z-index:20}
+.langdd a:hover{background:var(--accent);color:#fff}
+@media (max-width:720px){.langdd{margin-right:0}}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px;flex-wrap:wrap;font-size:.86rem;font-weight:500}
 .nav a{text-decoration:none;color:var(--muted)}
 .nav a:hover,.nav a:focus-visible{color:var(--fg)}
@@ -438,7 +439,8 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
 
 <nav class="nav"><div class="wrap">
   <div class="brand"><i></i>IDRISS NUBOOTHEA</div>
-  <div class="lang"><a href="index.html">FR</a><a href="en.html" class="on" aria-current="page">EN</a></div>
+  <details class="langdd"><summary><span>English</span><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><a href="index.html">Français</a></details>
+  
   <ul>
     <li><a href="#apropos">About</a></li>
     <li><a href="#parcours">Experience</a></li>
@@ -454,7 +456,6 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
     <p class="hi" aria-live="polite"><span id="hello">Hello!</span></p>
     <p class='iam'>I'm <b>Idriss Nuboothea</b> <span class="wave" aria-hidden="true">👋</span></p>
     <h1>Marketing & Communication Officer</h1>
-    <div class="langpick" aria-label="Language choice"><a href="index.html">🇫🇷 Français</a><a href="en.html" class="on">🇬🇧 English</a></div>
     <div class="stage">
       <div class="sun"></div>
       <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
