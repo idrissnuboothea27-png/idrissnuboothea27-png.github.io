@@ -272,7 +272,6 @@ section{padding-block:72px}
 /* projets */
 #projets{background:radial-gradient(45% 30% at 100% 0%,rgba(242,101,34,.16),transparent 70%),var(--bg)}
 .proj{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding-block:64px;border-top:1px solid var(--line)}
-.proj.light{border-top:0;border-radius:18px;padding:56px 40px;margin-block:12px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
 .proj > div:first-child{position:relative;min-width:0}
 .crumb{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1.6rem}
 .crumb span{border:1px solid var(--muted);border-radius:6px;padding:2px 10px;font-size:.74rem;font-weight:600;color:var(--muted)}
@@ -341,6 +340,65 @@ section{padding-block:72px}
 .vt .views{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.7);color:#fff;font-weight:700;font-size:.74rem;padding:4px 9px;border-radius:999px}
 .vt.big .views{background:var(--accent)}
 @media (max-width:820px){.vwall{gap:8px}.vt .play{width:34px;height:34px;margin:-17px 0 0 -17px}.vt .play::after{left:13px;top:9px;border-left-width:11px;border-top-width:7px;border-bottom-width:7px}}
+
+
+/* parcours sur fond clair, bande orange et cercle comme le modèle */
+.pcs{position:relative;overflow:hidden}
+.pcs::before{content:"";position:absolute;right:3%;top:0;bottom:0;width:100px;background:var(--accent);transform:skewX(-16deg);opacity:.95}
+.pcs::after{content:"";position:absolute;right:-300px;top:20px;width:560px;height:560px;border-radius:50%;border:34px solid rgba(255,255,255,.6);box-shadow:inset 0 0 40px rgba(0,0,0,.06)}
+.pcs .wrap{position:relative;z-index:1}
+.pcs .tl p{color:var(--muted-ink)}
+.pcs .tl p b{color:var(--ink)}
+.pcs .tl .co{color:#0b0b0b}
+.pcs .fbox{background:#fff;border-color:var(--line-light);box-shadow:0 14px 30px rgba(0,0,0,.08)}
+.pcs .fbox p{color:var(--muted-ink)}
+.pcs .fbox .yr{color:rgba(0,0,0,.08)}
+.pcs .fbox .eyebrow{color:var(--accent)}
+.pcs .h2{color:var(--ink)}
+
+/* projets : une page par projet, alternance clair / sombre, détails façon Behance */
+.pjintro{padding-block:64px 36px;background:var(--bg)}
+.pj{position:relative;overflow:hidden;padding-block:48px 36px}
+.pj-dark{background:var(--bg);color:var(--fg)}
+.pj-light{background:var(--paper);color:var(--ink)}
+.pj .wrap{position:relative;z-index:1}
+.pjhead{display:flex;align-items:center;gap:8px;margin-bottom:26px}
+.pjhead .tag{border:1px solid currentColor;opacity:.45;border-radius:6px;padding:3px 14px;font-size:.78rem;font-weight:600;white-space:nowrap}
+.pjhead .tag.on{opacity:1;border-width:1.5px}
+.pjhead::after{content:"";flex:1;height:1.5px;background:currentColor;opacity:.6;margin-left:10px}
+.pj .num{position:absolute;top:48px;left:-10px;font-family:var(--display);font-weight:800;font-size:10rem;line-height:.8;letter-spacing:-.05em;pointer-events:none;user-select:none;z-index:0}
+.pj-light .num{color:#cfc9bf;opacity:.55}
+.pj-dark .num{color:#fff;opacity:.07}
+.pjgrid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding-top:70px}
+.pj h3{font-size:clamp(1.8rem,3.8vw,2.6rem);font-weight:800;line-height:1.02;position:relative;margin:0 0 .3rem;padding-left:.9em}
+.pj .hand{padding-left:.9em;display:block}
+.pj .case{margin-top:1.6rem}
+.pjgrid > div:first-child{min-width:0}
+.pjfoot{display:flex;align-items:center;gap:18px;margin-top:44px}
+.pjfoot::before{content:"";flex:1;height:2px;background:currentColor;opacity:.85}
+.pjfoot span{font-family:var(--display);font-weight:800;font-size:1.35rem}
+/* décors */
+.band-v::before{content:"";position:absolute;left:58%;top:0;bottom:0;width:150px;background:var(--accent);z-index:0}
+.band-d::before{content:"";position:absolute;right:14%;top:-10%;bottom:-10%;width:160px;background:var(--accent);transform:skewX(-18deg);z-index:0}
+.pj-light::after{content:"";position:absolute;right:-240px;bottom:-200px;width:620px;height:620px;border-radius:50%;border:38px solid rgba(255,255,255,.55);box-shadow:inset 0 0 50px rgba(0,0,0,.05);z-index:0}
+.glow-r::before{content:"";position:absolute;right:-10%;top:10%;width:60%;height:80%;background:radial-gradient(closest-side,rgba(242,101,34,.32),transparent);filter:blur(30px);z-index:0}
+.glow-l::before{content:"";position:absolute;left:-15%;bottom:-10%;width:60%;height:70%;background:radial-gradient(closest-side,rgba(242,101,34,.28),transparent);filter:blur(30px);z-index:0}
+.streak::before{content:"";position:absolute;left:-10%;right:-10%;top:45%;height:160px;background:linear-gradient(90deg,transparent,rgba(242,101,34,.75) 30%,rgba(242,101,34,.9) 60%,transparent);transform:rotate(-6deg);filter:blur(18px);z-index:0}
+.pj-dark::after{content:"";position:absolute;left:50%;top:-60px;width:520px;height:220px;transform:translateX(-50%);background:radial-gradient(ellipse at top,rgba(255,255,255,.18),transparent 70%);z-index:0;pointer-events:none}
+/* composants sur page claire */
+.pj-light .impact{background:var(--ink);color:var(--fg)}
+.pj-light .phone{border-color:var(--ink);background:var(--ink)}
+.pj-light .caption{color:var(--muted-ink)}
+.pj-light .sms{border-color:var(--ink)}
+.pj-light .pill{background:var(--ink);color:var(--fg)}
+.pj-light .vt{border-color:#fff}
+.pj-light .frame{box-shadow:0 24px 50px rgba(0,0,0,.18)}
+.pj-light .mosaic img{box-shadow:0 20px 40px rgba(0,0,0,.22)}
+.pj-light .card{box-shadow:0 14px 30px rgba(0,0,0,.12);background:#fff}
+.pj-light .schema div{background:var(--paper-2)}
+.pj-light .quizmock{border-color:var(--ink)}
+.pj-light .case dd{color:#2a2622}
+@media (max-width:820px){.pjgrid{grid-template-columns:1fr;gap:24px;padding-top:50px}.pj .num{font-size:6.5rem;top:44px}.pj h3{padding-left:.6em}.pj .hand{padding-left:.6em}.band-v::before,.band-d::before,.pcs::before{display:none}.streak::before{opacity:.5}.pcs::after{display:none}.pj-light::after{display:none}.pjfoot{margin-top:28px}}
 
 /* contact */
 .contact{position:relative;overflow:hidden}
@@ -437,7 +495,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
   </div></div>
 </section>
 
-<section id="parcours"><div class="wrap">
+<section id="parcours" class="light pcs"><div class="wrap">
   <div class="head">
     <div><p class="eyebrow">Ce que mon parcours m'a appris</p><h2 class="h2">Du terrain à la <span class="hand" style="font-size:.85em">stratégie marketing</span></h2></div>
     <span class="note">ce que j'ai fait <svg><use href="#arrow"/></svg></span>
@@ -531,16 +589,18 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
   </div>
 </section>
 
-<section id="projets"><div class="wrap">
+<section id="projets" class="pjintro"><div class="wrap">
   <div class="head">
     <div><p class="eyebrow">Projets</p><h2 class="h2">Huit projets, du message <span class="hl">au résultat.</span></h2></div>
     <span class="note">mon travail, sur pièces <svg><use href="#arrow"/></svg></span>
   </div>
+</div></section>
 
-  <article class="proj" id="p1" style="margin-top:2rem">
-    <div>
-      <div class="num" aria-hidden="true">01</div>
-      <div class="crumb"><span>Portfolio</span><span>Événementiel et jeu concours</span></div>
+<section class="pj pj-light band-v" id="p1">
+  <div class="wrap">
+    <div class="pjhead"><span class="tag">Portfolio</span><span class="tag on">Événementiel et jeu concours</span></div>
+    <div class="num" aria-hidden="true">01</div>
+    <div class="pjgrid"><div>
       <h3>Opération cinéma Vaiana</h3>
       <span class="hand">Orange Réunion, juillet 2026</span>
       <dl class="case">
@@ -554,13 +614,16 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
     <div class="shot">
       <div class="phone"><img src="img/quiz_vaiana.jpg" alt="Mini-site embarqué Orange Quiz Vaiana"></div>
       <p class="caption">Le mini-site embarqué du quiz, thème sombre, un seul bouton.</p>
-    </div>
-  </article>
+    </div></div>
+    <div class="pjfoot"><span>01</span></div>
+  </div>
+</section>
 
-  <article class="proj" id="p2">
-    <div>
-      <div class="num" aria-hidden="true">02</div>
-      <div class="crumb"><span>Portfolio</span><span>Étude clients</span></div>
+<section class="pj pj-dark glow-r" id="p2">
+  <div class="wrap">
+    <div class="pjhead"><span class="tag">Portfolio</span><span class="tag on">Étude clients</span></div>
+    <div class="num" aria-hidden="true">02</div>
+    <div class="pjgrid"><div>
       <h3>Enquête clients sur la pression des communications</h3>
       <span class="hand">Orange Réunion, août 2026</span>
       <dl class="case">
@@ -577,13 +640,16 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
         <div class="card"><b>26</b><strong>questions</strong><p>en cinq blocs, échelle de 1 à 10</p></div>
       </div>
       <p class="caption">Données internes anonymisées par respect de la confidentialité.</p>
-    </div>
-  </article>
+    </div></div>
+    <div class="pjfoot"><span>02</span></div>
+  </div>
+</section>
 
-  <article class="proj" id="p3">
-    <div>
-      <div class="num" aria-hidden="true">03</div>
-      <div class="crumb"><span>Portfolio</span><span>Jeux concours mensuels</span></div>
+<section class="pj pj-light band-d" id="p3">
+  <div class="wrap">
+    <div class="pjhead"><span class="tag">Portfolio</span><span class="tag on">Jeux concours mensuels</span></div>
+    <div class="num" aria-hidden="true">03</div>
+    <div class="pjgrid"><div>
       <h3>Orange Quiz mensuels</h3>
       <span class="hand">Réunion et Mayotte, 2026</span>
       <dl class="case">
@@ -603,13 +669,16 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
         <div class="q">Félicitations · merci d'avoir participé</div>
       </div>
       <p class="caption">Schéma de la structure fixe, thème sombre de la charte.</p>
-    </div>
-  </article>
+    </div></div>
+    <div class="pjfoot"><span>03</span></div>
+  </div>
+</section>
 
-  <article class="proj light" id="p4">
-    <div>
-      <div class="num" aria-hidden="true">04</div>
-      <div class="crumb"><span>Portfolio</span><span>Marketing direct</span></div>
+<section class="pj pj-dark streak" id="p4">
+  <div class="wrap">
+    <div class="pjhead"><span class="tag">Portfolio</span><span class="tag on">Marketing direct</span></div>
+    <div class="num" aria-hidden="true">04</div>
+    <div class="pjgrid"><div>
       <h3>Campagnes SMS et e-mail multicanales</h3>
       <span class="hand">Orange Réunion Mayotte, 2026</span>
       <dl class="case">
@@ -636,13 +705,16 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
         <div class="phone l"><img src="img/koungou.jpg" alt="E-mail drive to store SAMDISCOUNT DOUKA à Koungou"></div>
       </div>
       <p class="caption">Exemples de SMS Orange Info et d'e-mail envoyés en 2026.</p>
-    </div>
-  </article>
+    </div></div>
+    <div class="pjfoot"><span>04</span></div>
+  </div>
+</section>
 
-  <article class="proj" id="p5">
-    <div>
-      <div class="num" aria-hidden="true">05</div>
-      <div class="crumb"><span>Portfolio</span><span>Stratégie et fidélisation</span></div>
+<section class="pj pj-light band-d" id="p5">
+  <div class="wrap">
+    <div class="pjhead"><span class="tag">Portfolio</span><span class="tag on">Stratégie et fidélisation</span></div>
+    <div class="num" aria-hidden="true">05</div>
+    <div class="pjgrid"><div>
       <h3>Benchmark fidélité et concept B2C</h3>
       <span class="hand">Orange Réunion Mayotte, 2026</span>
       <dl class="case">
@@ -655,13 +727,16 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
     <div class="shot">
       <div class="schema"><div>Client</div><div>Orange</div><div>Commerces partenaires</div></div>
       <p class="caption">Le principe du concept : des avantages chez des commerces locaux plutôt que des remises sur les seuls produits Orange.</p>
-    </div>
-  </article>
+    </div></div>
+    <div class="pjfoot"><span>05</span></div>
+  </div>
+</section>
 
-  <article class="proj" id="p6">
-    <div>
-      <div class="num" aria-hidden="true">06</div>
-      <div class="crumb"><span>Portfolio</span><span>Trade marketing</span></div>
+<section class="pj pj-dark glow-l" id="p6">
+  <div class="wrap">
+    <div class="pjhead"><span class="tag">Portfolio</span><span class="tag on">Trade marketing</span></div>
+    <div class="num" aria-hidden="true">06</div>
+    <div class="pjgrid"><div>
       <h3>Trade marketing et contenus</h3>
       <span class="hand">Ferebam, groupe GBH, 2025</span>
       <dl class="case">
@@ -677,13 +752,16 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
         <img src="img/filtration.jpg" alt="Visuel offre filtrations -30 %">
         <img src="img/satisfaction.jpg" alt="Affiche Donne-nous les 5 étoiles avec QR code">
       </div>
-    </div>
-  </article>
+    </div></div>
+    <div class="pjfoot"><span>06</span></div>
+  </div>
+</section>
 
-  <article class="proj" id="p7">
-    <div>
-      <div class="num" aria-hidden="true">07</div>
-      <div class="crumb"><span>Portfolio</span><span>Identité visuelle</span></div>
+<section class="pj pj-light band-v" id="p7">
+  <div class="wrap">
+    <div class="pjhead"><span class="tag">Portfolio</span><span class="tag on">Identité visuelle</span></div>
+    <div class="num" aria-hidden="true">07</div>
+    <div class="pjgrid"><div>
       <h3>Tradisyon Lontan, identité visuelle</h3>
       <span class="hand">Projet étudiant, facette créative</span>
       <dl class="case">
@@ -696,13 +774,16 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
     <div class="shot">
       <div class="frame logo"><img src="img/logo.jpg" alt="Logo Tradisyon Lontan"></div>
       <div class="frame"><img src="img/planche.jpg" alt="Planche de marque Tradisyon Lontan : palette, typographie, mockups"></div>
-    </div>
-  </article>
+    </div></div>
+    <div class="pjfoot"><span>07</span></div>
+  </div>
+</section>
 
-  <article class="proj" id="p8">
-    <div>
-      <div class="num" aria-hidden="true">08</div>
-      <div class="crumb"><span>Portfolio</span><span>Contenus vidéo</span></div>
+<section class="pj pj-dark streak" id="p8">
+  <div class="wrap">
+    <div class="pjhead"><span class="tag">Portfolio</span><span class="tag on">Contenus vidéo</span></div>
+    <div class="num" aria-hidden="true">08</div>
+    <div class="pjgrid"><div>
       <h3>Contenus vidéo pour les réseaux</h3>
       <span class="hand">Ferebam, groupe GBH, 2025</span>
       <dl class="case">
@@ -721,9 +802,10 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.8rem;border-top:1px sol
         <div class="vt"><img src="img/video_marketing.jpg" alt="Vidéo Team Marketing Ferebam"><span class="play"></span><span class="views">20 K vues</span></div>
       </div>
       <p class="caption">Trois vidéos publiées sur les réseaux de Ferebam en 2025, tournées et montées par mes soins.</p>
-    </div>
-  </article>
-</div></section>
+    </div></div>
+    <div class="pjfoot"><span>08</span></div>
+  </div>
+</section>
 
 <section id="contact" class="contact dark2"><div class="wrap">
   <h2>Parlons-en.</h2>
