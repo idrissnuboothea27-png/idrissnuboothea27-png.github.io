@@ -337,3 +337,17 @@ footer b{display:block;font-family:var(--anton);font-weight:400;font-size:1.3rem
   .reveal{opacity:1;transform:none}
   .hello h2 svg.ring path{stroke-dashoffset:0}
 }
+
+/* galerie opération Vaiana */
+.evwall{grid-column:2;margin-top:46px}
+.evtitle{font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,2.4vw,1.9rem);line-height:1.15;margin-bottom:22px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.evtitle .anton{font-style:normal;font-size:clamp(3rem,6vw,4.6rem);color:var(--red);line-height:.9}
+.evgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:auto auto;gap:18px;align-items:start}
+.ev{background:#f6f4ef;padding:10px 10px 0;box-shadow:0 18px 30px rgba(0,0,0,.4);transform:rotate(var(--r,0deg));transition:transform .3s}
+.ev:hover{transform:rotate(0) scale(1.02);z-index:2;position:relative}
+.ev img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.ev figcaption{font-family:var(--hand);font-size:1.3rem;color:#333;text-align:center;padding:6px 0 8px}
+.ev1{grid-row:span 2;--r:-1.5deg}.ev1 img{aspect-ratio:auto;height:auto}
+.ev2{--r:2deg;grid-row:span 2}.ev2 img{aspect-ratio:3/4}
+.ev3{--r:-2deg}.ev4{--r:1.5deg;grid-column:3}.ev5{display:none}
+@media(max-width:900px){.evwall{grid-column:auto;margin-top:26px}.evgrid{grid-template-columns:1fr 1fr}.ev1{grid-column:1/-1;grid-row:auto}.ev2{grid-row:auto}.ev4{grid-column:auto}.ev5{display:block;--r:-1deg}.ev5 img{aspect-ratio:3/4}}
