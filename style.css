@@ -363,3 +363,46 @@ footer b{display:block;font-family:var(--anton);font-weight:400;font-size:1.3rem
 .cover .best a:hover{transform:translateY(-2px)}
 .cover .best b{font-family:var(--anton);font-weight:400;font-size:1.35rem;color:var(--red)}
 @media(max-width:700px){.cover .bot{grid-template-columns:1fr}.cover .quote{justify-self:start;text-align:left}.cover .best{justify-content:flex-start}}
+
+/* ===== MOBILE (refonte affichage téléphone, 04/11/2026) ===== */
+@media(max-width:700px){
+  /* Couverture : titre lisible en haut, photo entière, textes dessous */
+  .cover{height:auto;max-height:none;min-height:0}
+  .cover .top{padding-top:78px;font-size:.7rem;letter-spacing:.12em;gap:10px}
+  .cover .word{position:relative;top:auto;transform:none;margin-top:22px;font-size:23vw;line-height:.82;letter-spacing:-.01em}
+  .cover .me{position:relative;left:auto;transform:none;display:block;height:auto;width:84%;max-width:360px;margin:-15vw auto 0;filter:drop-shadow(0 20px 30px rgba(0,0,0,.5))}
+  .cover .bot{margin-top:-70px;padding-top:70px;padding-bottom:34px;gap:18px;background:linear-gradient(180deg,transparent 0,rgba(11,11,11,.88) 70px,#0b0b0b 100%)}
+  .cover .label{margin-bottom:12px;transform:rotate(-2deg)}
+  .cover .label .box{font-size:.74rem;letter-spacing:.05em;padding:7px 12px 5px;white-space:nowrap}
+  .cover .role{font-size:1.9rem}
+  .cover .best{gap:8px;margin-bottom:16px}
+  .cover .best a{font-size:.82rem;padding:7px 14px}
+  .cover .best b{font-size:1.2rem}
+  .cover .quote q{font-size:1.45rem}
+
+  /* Bonjour : la flèche « appelez-moi » passe sous le prénom */
+  .hello{padding:96px 0 70px}
+  .hello h2{font-size:17vw;margin-bottom:22px}
+  .callme{position:static;display:flex;margin:14px 0 4px;font-size:1.25rem;transform:rotate(-3deg)}
+  .callme svg{width:40px;height:30px;margin-top:0;transform:rotate(-60deg)}
+  .hello h2 .nm{display:inline-flex;flex-direction:column;align-items:flex-start}
+  .hello h2 svg.ring{height:62%}
+  .circle-wrap{max-width:330px}
+  .circle-wrap .sticker{right:0;font-size:1.15rem;max-width:150px;padding:8px 12px}
+
+  /* Travaillons ensemble : badge contenu dans l'écran */
+  .work{padding:80px 0}
+  .work .grid{gap:30px}
+  .work .grid>*{min-width:0}
+  .badge{max-width:320px}
+  .badge svg.arc text{font-size:27px}
+  .work h2{font-size:15vw}
+  .work .dispo{font-size:1.2rem;margin:14px 0 24px}
+  .crow{flex-wrap:wrap;gap:4px 10px}
+  .contactline{gap:14px 28px;margin-top:34px}
+  .crow code,.crow a{overflow-wrap:anywhere;min-width:0}
+
+  /* Sécurité générale contre le défilement horizontal */
+  .collage .bub{left:auto;right:8px;font-size:2rem}
+  img{max-width:100%}
+}
