@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f26522'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%230b0b0b'%3EIN%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;700;800&family=Caveat:wght@600&display=swap">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -447,7 +447,7 @@
 </div></section>
 <section class="proj c-orange" id="p6"><div class="wrap row">
   <div class="hangtag"><span class="string"></span><div class="card"><b>06</b><span>Fidélisation</span></div></div>
-  <div class="book reveal">
+  <div class="book solo reveal">
     <div class="pg l">
       <h3 class="ptitle">Benchmark fidélité <em>et concept B2C</em></h3>
       <span class="when">Orange Réunion Mayotte, 2026</span>
@@ -456,14 +456,8 @@
         <div><dt>Rôle</dt><dd>Veille, analyse comparative, rédaction du concept, présentation.</dd></div>
         <div><dt>Contexte</dt><dd>La direction marketing réfléchissait à un programme de fidélité grand public ; aucune comparaison structurée des programmes locaux n'était disponible.</dd></div>
         <div><dt>Actions</dt><dd>Recensement des programmes présents à La Réunion, grille commune (mécanique, récompenses, partenaires, coût pour le client), concept adossé à des commerces réunionnais partenaires.</dd></div>
-        <div><dt>Résultat</dt><dd>Un comparatif de référence et un concept documenté remis à la direction, avec un premier partenaire local identifié et le constat qu'aucun opérateur télécom ne propose encore ce type de programme à La Réunion.</dd></div>
       </dl>
       <div class="tools pills"><span class="pill">PowerPoint</span><span class="pill">Word</span><span class="pill">Excel</span></div>
-    </div>
-    <div class="spine" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-    <div class="pg r">
-      <div class="schema"><div>Client</div><div>Orange</div><div>Commerces partenaires</div></div>
-      <p class="cap">des avantages chez des commerces locaux plutôt que des remises sur les seuls produits Orange</p>
     </div>
   </div>
 </div></section>
@@ -571,6 +565,11 @@
     });
   });
 })();
+</script>
+<script>
+/* Ajuste le texte circulaire pour qu'il fasse exactement le tour, sans chevauchement */
+(function(){function fit(){document.querySelectorAll('.badge svg.arc').forEach(function(svg){var t=svg.querySelector('text'),p=svg.querySelector('path');if(!t||!p)return;var L=p.getTotalLength(),fs=25;t.style.fontSize=fs+'px';var w=t.getComputedTextLength();if(w>0){t.style.fontSize=(fs*L*0.985/w)+'px'}})}
+if(document.fonts&&document.fonts.ready){document.fonts.ready.then(fit)}else{addEventListener('load',fit)}})();
 </script>
 </body>
 </html>
