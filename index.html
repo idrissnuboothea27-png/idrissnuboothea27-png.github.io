@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f26522'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%230b0b0b'%3EIN%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;700;800&family=Caveat:wght@600&display=swap">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -513,7 +513,7 @@
     <div class="badge reveal">
       <div class="disc"></div>
       <svg class="arc" viewBox="0 0 500 500" aria-hidden="true"><defs><path id="circ" d="M250,250 m-212,0 a212,212 0 1,1 424,0 a212,212 0 1,1 -424,0"/></defs><text><textPath href="#circ">LE PORTFOLIO MONTRE · L'ÉCHANGE CONVAINC · LE PORTFOLIO MONTRE · L'ÉCHANGE CONVAINC ·</textPath></text></svg>
-      <div class="ph"><img src="img/photo.jpg" alt="Idriss Nuboothea" loading="lazy"></div>
+      <div class="ph"><img src="img/photo_rond.jpg" alt="Idriss Nuboothea" loading="lazy"></div>
     </div>
     <div class="reveal">
       <h2 class="anton">Travaillons<br>ensemble</h2>
@@ -568,8 +568,8 @@
 </script>
 <script>
 /* Ajuste le texte circulaire pour qu'il fasse exactement le tour, sans chevauchement */
-(function(){function fit(){document.querySelectorAll('.badge svg.arc').forEach(function(svg){var t=svg.querySelector('text'),p=svg.querySelector('path');if(!t||!p)return;var L=p.getTotalLength(),fs=25;t.style.fontSize=fs+'px';var w=t.getComputedTextLength();if(w>0){t.style.fontSize=(fs*L*0.985/w)+'px'}})}
-if(document.fonts&&document.fonts.ready){document.fonts.ready.then(fit)}else{addEventListener('load',fit)}})();
+(function(){function fit(){document.querySelectorAll('.badge svg.arc').forEach(function(svg){var t=svg.querySelector('text'),p=svg.querySelector('path');if(!t||!p)return;var L=p.getTotalLength(),fs=25;t.style.fontSize=fs+'px';var w=t.getComputedTextLength();if(w>0){t.style.fontSize=(fs*L*0.97/w)+'px'}})}
+fit();if(document.fonts){document.fonts.ready.then(fit);if(document.fonts.load){document.fonts.load('800 25px Manrope').then(fit)}}addEventListener('load',fit);setTimeout(fit,1500);addEventListener('resize',fit)})();
 </script>
 </body>
 </html>
